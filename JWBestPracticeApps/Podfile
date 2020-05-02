@@ -1,0 +1,150 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '11.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+def common_JW
+    pod 'JWPlayer-SDK', '~> 3.12.0'
+end
+
+def common_Cast
+    pod 'google-cast-sdk', '4.4.5'
+end
+
+def common_Google_IMA
+    pod 'GoogleAds-IMA-iOS-SDK', '3.11.3'
+end
+
+target 'JWBestPracticeApps' do
+
+    common_JW
+
+end
+
+target 'BasicVideoViewController' do
+  
+  common_JW
+  
+end
+
+target 'AutoplayVideoFeed' do
+  
+  common_JW
+  
+end 
+
+target 'GoogleDAI' do
+  
+  common_JW
+  common_Google_IMA
+  
+end
+
+target 'JWCasting' do
+
+    common_JW
+    common_Cast
+
+end
+
+target 'Casting' do
+  
+  common_JW
+  common_Cast
+  
+end
+
+target 'JWAirPlay' do
+
+    common_JW
+
+end
+
+target 'JWRemotePlayer' do
+
+    common_JW
+    common_Cast
+
+end
+
+target 'JWRemoteController' do
+
+end
+
+target 'JWRemoteController Extension' do
+
+end
+
+target 'JWRemoteCastPlayer' do
+
+    common_JW
+    common_Cast
+
+end
+
+target 'JWRemoteCastController' do
+
+end
+
+target 'JWRemoteCastController Extension' do
+
+end
+
+target 'Voicer' do
+
+    common_JW
+    common_Cast
+
+end
+
+target 'VoicerExtension' do
+
+end 
+
+target 'JWFairPlayDrm' do
+
+    common_JW
+    common_Cast
+
+end
+
+target 'JWConviva' do
+
+    pod 'ConvivaSDK'
+    common_JW
+
+end
+
+target 'JWFriendlyObstructions' do
+
+    common_JW
+    common_Google_IMA
+
+end
+
+target 'FeedCollectionViewController' do
+  
+  common_JW
+  
+end
+
+target 'FeedTableViewController' do
+  
+  common_JW
+  
+end
+
+target 'NativeControls' do
+  
+  common_JW
+  
+end
+
+target 'AirPlay' do
+  
+  common_JW
+  
+end
+
+workspace 'JWBestPracticeApps'
+
